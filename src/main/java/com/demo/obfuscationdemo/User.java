@@ -2,7 +2,7 @@ package com.demo.obfuscationdemo;
 
 import jakarta.persistence.*;
 
-@Entity(name="test2")
+@Entity(name="test3")
 public class User {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
