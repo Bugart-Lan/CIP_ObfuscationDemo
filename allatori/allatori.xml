@@ -1,0 +1,22 @@
+<config>
+    <input>
+        <jar in="ObfuscationDemo-0.0.1-SNAPSHOT.jar" out="obfuscated.jar"/>
+    </input>
+
+    <ignore-classes>
+        <class template="class *springframework*"/>
+        <class template="class com.demo.obfuscationdemo.User"/>
+        <class template="class com.demo.obfuscationdemo.ObfuscationDemoAPIController"/>
+    </ignore-classes>
+
+    <keep-names>
+        <class template="class *.ObfuscationDemoApplication" />
+        <class access="protected+">
+            <field access="protected+" />
+            <method access="protected+" />
+        </class>
+    </keep-names>
+
+
+    <property name="log-file" value="log.xml"/>
+</config>
