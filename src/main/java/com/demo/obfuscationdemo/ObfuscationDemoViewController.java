@@ -21,21 +21,4 @@ public class ObfuscationDemoViewController {
         model.addAttribute("greeting", greeting);
         return "result";
     }
-//    @PostMapping("/add")
-//    public @ResponseBody String addNewUser(@RequestParam String name, @RequestParam String email) {
-//        User user = new User();
-//        user.setName(name);
-//        user.setEmail(email);
-//        userRepository.save(user);
-//        return "Saved";
-//    }
-//
-//    @GetMapping("/all")
-//    public @ResponseBody Iterable<User> getAllUsers() {
-//        Iterable<User> users = userRepository.findAll();
-//        for (User user : users) {
-//            System.out.println(user.getName());
-//        }
-//        return users;
-//    }
 }
